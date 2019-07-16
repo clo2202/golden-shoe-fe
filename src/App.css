@@ -1,4 +1,4 @@
-/* body {
+body {
   margin: 0;
 }
 
@@ -7,16 +7,9 @@
   font-family: 'Raleway', sans-serif;
   width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 10fr;
-  grid-template-areas:
-  "header header"
-  "nav nav"
-  "form main"
 }
 
-.header {
+/* .header {
   grid-area: header;
 }
 
@@ -34,6 +27,5 @@
 
 .main {
   grid-area: main;
-}
+} */
 
- */

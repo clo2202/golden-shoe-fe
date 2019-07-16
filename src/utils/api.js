@@ -8,3 +8,8 @@ export const getShoes = async (size) => {
     })
     return data.shoes
 }
+
+export const getShoeById = async (shoe_id) => {
+    const { data } = await axios.get(`${BASEURL}/shoes/${shoe_id}`)
+    return data.shoes
+}

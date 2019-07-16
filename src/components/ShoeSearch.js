@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ShoeList from "./ShoeList";
 import Search from "./Search";
 import * as api from '../utils/api'
-// import * as utils from '../utils/utils'
+import * as utils from '../utils/utils'
 
 class ShoeSearch extends Component {
 
@@ -28,7 +28,8 @@ class ShoeSearch extends Component {
   fetchShoes = async () => {
     const { size } = this.state
     const shoes = await api.getShoes(size)
-    this.setState({shoes})
+    const filteredShoes = utils.filterShoes(shoes)
+    this.setState({shoes: filteredShoes})
   } 
 
   handleSizeChange = (event) => {
@@ -49,4 +50,8 @@ class ShoeSearch extends Component {
   }
 }
 
+
+
 export default ShoeSearch;
+
+
