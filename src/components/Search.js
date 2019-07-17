@@ -4,7 +4,7 @@ const Search = ({handleSizeChange, handleSubmit}) => {
   return (
     <form className="filter" onSubmit={handleSubmit}>
     <div className="filter-size" >
-      <label htmlFor="size">Size</label><br/>
+      <label htmlFor="size"><b>Size</b></label>
       <input
         type="radio"
         id="size"
@@ -29,43 +29,6 @@ const Search = ({handleSizeChange, handleSubmit}) => {
         onChange={handleSizeChange}
       />
       6
-    </div>
-    <div className="filter-style">
-      <label htmlFor="style">Style</label><br/>
-      <input
-        type="radio"
-        name="style"
-        value="trainers"
-      />
-      Trainers
-      <input
-        type="radio"
-        name="style"
-        value="boots"
-      />
-      Boots
-      <input
-        type="radio"
-        name="style"
-        value="sandals"
-      />
-      Sandals
-      <input
-        type="radio"
-        name="style"
-        value="shoes"
-      />
-      Shoes
-    </div>
-    <div>
-      <label htmlFor="price">Price</label><br/>
-      <input
-        type="range"
-        id="price"
-        value='60'
-        min="0"
-        max="200"
-      />
     </div>
     <button type='submit'>Clear</button>
   </form>

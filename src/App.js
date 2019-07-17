@@ -7,7 +7,7 @@ import ProductPage from "./components/ProductPage";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router className='container'>
         <Home path='/shoes'/>
         <ProductPage path='/shoes/:shoe_id'/>
       </Router>

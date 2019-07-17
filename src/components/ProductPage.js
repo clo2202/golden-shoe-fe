@@ -10,16 +10,21 @@ class ProductPage extends Component {
     description: "",
     price: 0,
     image_url: "",
-    stock: []
+    stock: [],
+    isLoading: true
   };
 
   render() {
-      const { shoe_name, description, price, image_url } = this.state;
+      const { shoe_name, description, price, image_url, stock, isLoading } = this.state;
     return (
       <div>
         <Heading />
         <Nav />
-        <ProductDetails name={shoe_name} description={description} price={price} url={image_url}/>
+        {isLoading ? (
+            <p>Loading...</p>
+        ) : (
+        <ProductDetails name={shoe_name} description={description} price={price} url={image_url} stock={stock}/>
+        )}
       </div>
     );
   }
@@ -35,7 +40,9 @@ class ProductPage extends Component {
       shoe_name: shoes[0].shoe_name,
       description: shoes[0].description,
       price: shoes[0].price,
-      image_url: shoes[0].image_url
+      image_url: shoes[0].image_url,
+      stock: shoes,
+      isLoading: false
     });
   };
 }

@@ -5,7 +5,7 @@ import ShoeSearch from "./ShoeSearch";
 
 const Home = () => {
   return (
-    <div>
+    <div className='home-page'>
       <Heading />
       <Nav />
       <ShoeSearch/>

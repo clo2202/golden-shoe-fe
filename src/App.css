@@ -7,25 +7,175 @@ body {
   font-family: 'Raleway', sans-serif;
   width: 100vw;
   height: 100vh;
+  background-color: white
 }
 
-/* .header {
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr 3fr;
+  grid-template-areas:
+  "header"
+  "nav"
+  "filter"
+  "main"
+}
+
+.header {
   grid-area: header;
+  border: 2px black solid;
+  margin: 0;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: black;
 }
 
 .nav {
   grid-area: nav;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px;
 }
 
-.form {
-  grid-area: form;
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold
+}
+
+.filter button {
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.filter button:hover {
+  cursor: pointer;
 }
 
 .filter {
-  grid-area: form;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.main {
-  grid-area: main;
-} */
+.shoelist {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
+.shoelist li {
+  list-style: none;
+  border: dashed #0B0C0C 1px;
+  display: grid;
+  grid-template-columns: 150px auto;
+  justify-content: space-evenly;
+  width: 40%;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+  color:black;
+}
+
+.shoelist button {
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.shoelist button:hover {
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px black solid;
+  padding: 5px;
+}
+
+label {
+  padding: 5px;
+}
+
+.shoe-details {
+  margin: 10px;
+  padding: 10px;
+}
+
+.shoe-details button {
+  color: black;
+  padding: 10px;
+  margin: 20px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid black;
+}
+
+.shoe-details button:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.shoe-details img {
+  border: 1px solid black;
+}
+
+.shoe-details select {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  .shoelist {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .shoelist li {
+    list-style: none;
+    border: dashed #0B0C0C 1px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    padding: 8px;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:black;
+  }
+
+  .shoelist button {
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    border: solid 1px black;
+  }
+
+  .filter button {
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    border: solid 1px black;
+  }
+}
