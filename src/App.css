@@ -178,4 +178,9 @@ label {
     font-family: 'Raleway', sans-serif;
     border: solid 1px black;
   }
+
+  .shoe-details img {
+    width: 250px;
+    height: 250px;
+  }
 }
