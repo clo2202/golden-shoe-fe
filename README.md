@@ -4,7 +4,7 @@
 
 The API can be viewed on https://be-golden-shoe.herokuapp.com/api/shoes
 
-This project was built [Create React App](https://github.com/facebook/create-react-app).
+This project was built with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Getting Started
 
