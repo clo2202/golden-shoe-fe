@@ -3,6 +3,7 @@
 **A simple online shoe-store prototype built using React, Express server, PSQL and Knex**
 
 The API can be viewed on https://be-golden-shoe.herokuapp.com/api/shoes
+A hosted version of the prototype can be found on https://vigorous-bose-b4d3d7.netlify.com/
 
 This project was built with [Create React App](https://github.com/facebook/create-react-app).
 
