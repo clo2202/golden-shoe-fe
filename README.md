@@ -14,8 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 In order to use this project you'll need the following;
 
-1. A JS code editor (I used VS code)
-2. A heroku account to view your requests (optional).
+1. A text editor (I used VS code)
 
 ## Step 2 - Set up your own version of the repo
 
@@ -46,8 +45,7 @@ npm start
 
 * React - the frontend
 * SQL - the database
-* Heroku - hosting website for the application & database
-* VS Code (Node JS) - language used to write the backend
+* Heroku - hosting website for the database & API
 
 ## Authors 
 

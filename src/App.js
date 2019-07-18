@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Router className='container'>
-        <Home path='/shoes'/>
+        <Home path='/'/>
         <ProductPage path='/shoes/:shoe_id'/>
       </Router>
     </div>
